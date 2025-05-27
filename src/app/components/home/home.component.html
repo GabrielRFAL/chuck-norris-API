@@ -1,1 +1,18 @@
-<button class="btn btn-primary" (click)="openModal()">Abrir Piada do Chuck Norris</button>
+<div class="container mt-5 text-center">
+  <button class="btn btn-success mb-4" (click)="gerarPiada()">Gerar Piada</button>
+
+  <div *ngIf="isLoading" class="text-muted">Carregando...</div>
+  <div *ngIf="errorMessage" class="text-danger">{{ errorMessage }}</div>
+
+  <div *ngIf="piada" class="card p-3 mt-3 text-start mx-auto" style="max-width: 600px;">
+    <div class="d-flex align-items-center">
+      <img [src]="piada.icon_url" width="60" height="60" alt="Ícone" class="me-3" />
+      <div>
+        <p><strong>Piada:</strong> {{ piada.value }}</p>
+        <p><strong>Criada em:</strong> {{ piada.created_at | date:'medium' }}</p>
+        <p><a [href]="piada.url" target="_blank">Ver na API</a></p>
+        <button class="btn btn-primary btn-sm mt-2" (click)="openModal()">Ver no Modal</button>
+      </div>
+    </div>
+  </div>
+</div>

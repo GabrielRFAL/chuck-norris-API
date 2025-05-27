@@ -1,4 +1,29 @@
-# Chuck Norris API
+# 🤠 Chuck Norris API
+
+Este projeto foi desenvolvido com **Angular** e consome a [API pública de piadas do Chuck Norris](https://api.chucknorris.io). Ele permite gerar piadas aleatórias e exibi-las em um modal, com possibilidade de carregar novas piadas dinamicamente.
+
+---
+
+## 🚀 Funcionalidades
+
+- ✅ Gerar uma piada aleatória diretamente da API
+- ✅ Exibir os seguintes dados da piada:
+  - `created_at` – data de criação
+  - `icon_url` – ícone associado
+  - `url` – link para a piada na API
+  - `value` – texto da piada
+- ✅ Abrir a piada em um modal
+- ✅ Carregar outra piada dentro do modal com um botão
+
+---
+
+## 🧰 Tecnologias Utilizadas
+
+- [Angular](https://angular.io/)
+- [Ng-Bootstrap](https://ng-bootstrap.github.io/)
+- [API Chuck Norris Jokes](https://api.chucknorris.io)
+
+---
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
 
